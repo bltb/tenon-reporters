@@ -95,16 +95,22 @@
             <h2 id="results-title"><span class="total-errors">{{resultSummary.issues.totalErrors}}</span> issues found for <a href="{{request.url}}">{{request.url}}</a></h2>
 
             <div class="grid">
-                <ul class="score-list col-1-2">
+                <ul class="score-list col-1-3">
                     <li class="passing-count"><span class="text-success">{{resultSummary.tests.total}}</span> total</li>
                     <li class="failing-count"><span class="text-danger">{{resultSummary.issues.totalErrors}}</span> errors</li>
                     <li class="warning-count"><span class="text-warning">{{resultSummary.issues.totalWarnings}}</span> warnings</li>
                 </ul>
 
-                <ul class="meta-data col-1-2">
+                <ul class="meta-data col-1-3">
                     <li class="time-label">Processed in <span class="time-data">{{responseExecTime}} sec</span></li>
                     <li class="screen-label">Screen Size: <span class="screen-data">{{request.viewport.width}}</span>w x <span class="screen-data">{{request.viewport.height}}</span>h</li>
                     <li class="filesize-label">Page size: <span class="filesize-data">{{documentSize}}</span></li>
+                </ul>
+
+                <ul class="test-list col-1-3">
+                    <li class="total-tests-count"><span class="text-success">{{resultSummary.tests.total}}</span> total tests</li>
+                    <li class="failed-tests-count"><span class="text-danger">{{resultSummary.tests.failing}}</span> failed tests</li>
+                    <li class="passed-tests-count"><span class="text-success">{{resultSummary.tests.passing}}</span> passed tests</li>
                 </ul>
             </div>
         </div>
