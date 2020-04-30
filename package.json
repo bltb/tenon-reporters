@@ -28,7 +28,8 @@
   "dependencies": {
     "csv-stringify": "^1.0.4",
     "hogan.js": "^3.0.2",
-    "lints": "^17.0.1"
+    "lints": "^17.0.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
@@ -42,6 +43,9 @@
   },
   "scripts": {
     "test": "grunt test",
-    "pretest": "lints"
-  }
+    "pretest": "lints",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
