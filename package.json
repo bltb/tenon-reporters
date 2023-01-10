@@ -28,7 +28,7 @@
   "dependencies": {
     "csv-stringify": "^1.0.4",
     "hogan.js": "^3.0.2",
-    "lints": "^17.0.1"
+    "lints": "^18.0.0"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
